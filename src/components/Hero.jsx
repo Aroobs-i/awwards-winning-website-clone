@@ -49,7 +49,10 @@ const Hero = () => {
       })
 
       gsap.from('#current-video', {
-        transformOrigin: 'center center', 
+        transformOrigin: 'center center',
+        scale: 0,
+        duration: 1.5,
+        ease: 'power1.inOut', 
       })
      }
   }, {dependencies:[currentIndex], revertOnUpdate: true});
@@ -120,7 +123,7 @@ const Hero = () => {
               id="watch-trailer"
               title="Watch Trailer"
               leftIcon={<TiLocationArrow />}
-              containerClass="!bg-yellow-300 flex-center gap-1" 
+              containerClass="!bg-yellow-300 flex-center" 
             />
 
           </div>
