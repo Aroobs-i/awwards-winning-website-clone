@@ -1,6 +1,14 @@
+import { useRef, useState } from "react"
 import { TiLocationArrow } from "react-icons/ti"
 
 const BentoTilt = ({ children, className='' }) => {
+    const [transformStyle, setTransformStyle] = useState('');
+    const itemRef = useRef();
+
+    const handleMouseMove = (e) => {}
+
+    const handleMouseLeave = (e) => {}
+
     return (
         <div className={className}>
             {children}
