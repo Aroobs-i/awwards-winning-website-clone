@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const Story = () => {
 
-    const frameRef = useRef('null');
+    const frameRef = useRef(null);
 
     const handleMouseLeave = () => {
         const element = frameRef.current;
@@ -50,7 +50,7 @@ const Story = () => {
 
             <div className="relative size-full">
                 <AnimatedTitle
-                  title="The st<b>o</b>ry of <br/> a hidden real<b>m</b>"
+                  title="The st<b>o</b>ry of<br />a hidden real<b>m</b>"
                   sectionId="#story"
                   containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10" 
                 />
